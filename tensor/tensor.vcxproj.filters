@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="tensor_float.h">
+      <Filter>tensor_impl</Filter>
+    </CudaCompile>
+    <CudaCompile Include="tensor_half.h">
+      <Filter>tensor_impl</Filter>
+    </CudaCompile>
+    <CudaCompile Include="tensor_integral.h">
+      <Filter>tensor_impl</Filter>
+    </CudaCompile>
+    <CudaCompile Include="tensor_lib_init.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cuda_error_defines.h" />
+    <ClInclude Include="tensor.h" />
+    <ClInclude Include="tensor_types.h" />
+    <ClInclude Include="tensor_generic.h">
+      <Filter>tensor_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor_transprecision_cuda_procedures.h">
+      <Filter>cuda_procedures</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_procedures_helpers.h">
+      <Filter>cuda_procedures</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor_lib.h" />
+    <ClInclude Include="random_engine.h">
+      <Filter>cuda_procedures</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor_math_operations_procedures.h">
+      <Filter>cuda_procedures</Filter>
+    </ClInclude>
+    <ClInclude Include="broadcasting_helper.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="thrust_helpers.h">
+      <Filter>cuda_procedures</Filter>
+    </ClInclude>
+    <ClInclude Include="number_operators.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor_lib_init.h" />
+    <ClInclude Include="tensor_extensions.h">
+      <Filter>extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="convolution_extensions.h">
+      <Filter>extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="dnn_extensions.h">
+      <Filter>extensions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tensor_impl">
+      <UniqueIdentifier>{141c3894-51a0-4a25-b1f8-4009d31b0543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda_procedures">
+      <UniqueIdentifier>{99c0ba79-7eee-44ae-a0e5-f83ff67c9f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers">
+      <UniqueIdentifier>{eaa0b6d9-e0dd-48cb-b4a8-01c816c6eda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions">
+      <UniqueIdentifier>{279cf962-dd12-4b17-b772-ce01db0df0f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="broadcasting_helper.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
