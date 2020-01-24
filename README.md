@@ -1,2 +1,6 @@
 # Transprecision-Floating-Point
-Work about advantages and disadvantages of using transprecision floating-point
+Work about advantages and disadvantages of using transprecision floating-point. [Link](https://github.com/BalderOdinson/Transprecision-Floating-Point/blob/master/dbrmbota-semdip.pdf) to pdf.
+
+## Summary
+
+Recently more and more new algorithms are made to work with approximate results rather then requiring high precision. With evolution of approximate-computing new paradigm has emerged - *transprecision computing*. Research shows that 50% of energy falls of to floating-point operation in high computation applications. They also showed that 90\% of operations can safely be scaled down to 8-bit and 16-bit formats so the results are still inside required precision. By doing that they could vectorize operations which saved them 30% of energy consumption and lead to decrease of execution time by 12%. But to be able to alter floating-point some standard must be defined. IEEE 754-2008 is latest floating-point standard. It defines floating-point format and operations. After defining standard to test newly introduced floating-point formats experiments on neural network algorithms has been made. Result showed that *transprecision computing* can bring many improvements.
